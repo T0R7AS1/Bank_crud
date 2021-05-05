@@ -9,8 +9,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     createSaskaita($_POST);
 }
 
-
-
 ?>
 
 <div class="container">
@@ -23,19 +21,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <form method="POST">
                         <div class="form-group">
                             <label class="mb-1" for="inputProjectname">Vardas</label>
-                            <input type="text" class="form-control" placeholder="Irasykite varda" name="vardas" autocomplete="off" pattern="[a-zA-Z]{1,}">
+                            <input type="text" class="form-control" placeholder="Irasykite varda" name="vardas" autocomplete="off">
                         </div>
                         <div class="form-group">
-                            <label class=" mb-1" for="inputProjectname">Pavarde</label>
-                            <input class="form-control" placeholder="Irasykite pavarde" name="pavarde" autocomplete="off" pattern="[a-zA-Z]{1,}">
+                            <label class="mb-1" for="inputProjectname">Pavarde</label>
+                            <input class="form-control" placeholder="Irasykite pavarde" name="pavarde" autocomplete="off">
                         </div>
                         <div class="form-group">
-                            <label class=" mb-1" for="inputProjectname">Saskaitos Numeris</label>
-                            <input class="form-control" placeholder="Irasykite saskaitos numeri" name="saskaita" autocomplete="off" pattern="[1-9]{1,}">
+                            <label class="mb-1" for="inputProjectname">Saskaitos Numeris</label>
+                            <input class="form-control" placeholder="Irasykite saskaitos numeri" name="saskaita" autocomplete="off">
                         </div>
                         <div class="form-group">
                             <label class=" mb-1" for="inputProjectname">Asmens Kodas</label>
-                            <input class="form-control" placeholder="Irasykite asmens_koda" name="asmens_kodas" autocomplete="off" pattern="[1-9]{1,}">
+                            <input class="form-control" placeholder="Irasykite asmens koda" name="asmens_kodas" autocomplete="off">
                         </div>
                         <button type="submit" class="btn btn-success btn-block mt-4">Prideti</button>
                     </form>
@@ -44,3 +42,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
     </div>  
 </div>
+<?php
+include 'layouts/footer.php';
+?>

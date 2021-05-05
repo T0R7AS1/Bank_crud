@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </table>
         <form method="POST">
             <div class="input-group-sm">
-                <input type="text" class="input-group-text" name="likuti" pattern="[1-9]{1,}">
+                <input type="text" class="input-group-text" name="likuti">
                 <button type="submit" class="btn btn-warning btn-block mt-4">
                     Nuskaiciuoti Lesu
                 </button>
